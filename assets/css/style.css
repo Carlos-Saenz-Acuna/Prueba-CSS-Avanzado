@@ -87,13 +87,18 @@ button{
     gap: 1rem;
     background-color: white;
     border-radius: 5%;
-    
+    overflow: hidden;
 }
 
 img{
     width: 200px;
     margin: auto;
-    animation: zoom 1s infinite;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+img:hover{
+    transform: scale(1.5);
 }
 
 @media (min-width: 576px){
@@ -154,17 +159,5 @@ img{
         margin: 0.5rem;
         }
     }
-}
-
-@keyframes zoom {
-  0% {
-    scale: 100%;
-  }
-  50% {
-    scale: 150%;
-  }
-  100% {
-    scale: 100%;
-  }
 }
 
