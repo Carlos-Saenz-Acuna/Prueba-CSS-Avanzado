@@ -1,0 +1,170 @@
+*{ 
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #3a3a3a;
+    color: white;
+    height: 3rem;
+}
+
+.aside{
+    grid-area: aside;
+    text-align: center;
+    background-color: #FBB023;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: black;
+    height: 3rem;
+}
+
+.main{
+    height: 75vh;
+    overflow: scroll;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #D0581C;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 2rem;
+}
+
+.menu{
+        display: none;
+        text-shadow: 2px 2px 2px black;
+}
+
+
+
+.btn {
+    width: 60%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.425);
+    border-radius: 8px;
+    border: none;
+}
+
+button{
+    background-color: #D0581C;
+    color: white;
+    height: 50px;
+    text-shadow: 2px 2px 2px black;
+    margin: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.productos{
+    padding: 1rem 1rem;
+    grid-area: menu;
+    display:grid;
+    gap: 1rem;
+    background-color: #F1AC88;
+}
+
+.caja-producto{
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #363231;
+    text-align: center;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 5%;
+    
+}
+
+img{
+    width: 200px;
+    margin: auto;
+    animation: zoom 1s infinite;
+}
+
+@media (min-width: 576px){
+    body{
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        grid-template-areas:
+        "aside  nav"
+        "menu   main"
+        "menu   main"
+        "menu   main"
+        "footer footer";
+
+        .nav{
+            height: 5rem;
+            min-width: 5rem;
+        }
+
+        .aside{
+            height: 6rem;
+        }
+        .menu{
+            grid-area: menu;
+            display: flex;
+            min-width: 9rem;
+            height: auto;
+            justify-content: center;
+            list-style: none;
+            padding-top: 2rem;
+            background-color: #D0581C;
+            text-align: center;
+            color: white;
+        }
+
+
+
+       .productos{
+            grid-template-columns: repeat(auto-fill, minmax(220px, auto));
+        }
+        .main{
+            height: 75vh;
+        }
+        .numero{
+            padding: 1rem;
+}
+        .footer{
+            height: auto;
+            padding: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+        margin: 0.5rem;
+        }
+    }
+}
+
+@keyframes zoom {
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 150%;
+  }
+  100% {
+    scale: 100%;
+  }
+}
+
