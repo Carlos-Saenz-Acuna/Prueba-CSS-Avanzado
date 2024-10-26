@@ -18,12 +18,8 @@
     align-items: center;
     text-shadow: 5px 5px 0px rgb(167, 0, 78);
     color: #ffffff;
-    height: 6rem;s
-    font-size: 2rem;
-      font-family: "Raleway", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+    height: 6rem;
+    font-size: 1.7rem;
 
 }
 
@@ -35,7 +31,7 @@
 }
 
 .games{
-    height: 5rem;
+    height: 0rem;
     background-image: url(../img/games.gif);
     background-size: cover;
     background-position: center center;
@@ -56,7 +52,7 @@
     text-align: center;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    height: 2rem;
+    height: 1.75rem;
 }
 
 .menu{
@@ -130,7 +126,7 @@ img:hover{
         .nav{
             height: 8rem;
             min-width: 10rem;
-            font-size: 2.7rem;
+            font-size: 2.5rem;
         }
 
         .aside{
