@@ -10,24 +10,25 @@
 
 .nav{
     grid-area: nav;
-        display: flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #3a3a3a;
-    background-position: left center;
+    font-size: 1.5rem;
     color: white;
-    height: 3rem;
+    height: 6rem;
 }
 
 .aside{
     grid-area: aside;
-    text-align: center;
     color: black;
-    height: 3rem;
 
+    overflow: hidden;
+    
 }
 
 .games{
-    height: 3rem;
+    height: 5rem;
     background-image: url(../img/games.gif);
     background-size: cover;
     background-position: center center;
@@ -36,7 +37,7 @@
 }
 
 .main{
-    height: 75vh;
+    height: 70vh;
     overflow: scroll;
 }
 
@@ -116,11 +117,12 @@ img:hover{
         .nav{
             height: 8rem;
             min-width: 10rem;
+            font-size: 3rem;
         }
 
         .aside{
             height: 8rem;
-            overflow: hidden;
+           
         }
 
         .games{
@@ -147,7 +149,7 @@ img:hover{
             grid-template-columns: repeat(auto-fill, minmax(200px, auto));
         }
         .main{
-            height: 75vh;
+            height: 67vh;
         }
         .numero{
             padding: 1rem;
