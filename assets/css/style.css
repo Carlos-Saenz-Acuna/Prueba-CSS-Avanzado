@@ -10,10 +10,10 @@
 
 .nav{
     grid-area: nav;
-    display: flex;
+        display: flex;
     justify-content: space-between;
-    padding: 1rem;
     background-color: #3a3a3a;
+    background-position: left center;
     color: white;
     height: 3rem;
 }
@@ -21,11 +21,18 @@
 .aside{
     grid-area: aside;
     text-align: center;
-    background-color: #FBB023;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
     color: black;
     height: 3rem;
+
+}
+
+.games{
+    height: 3rem;
+    background-image: url(../img/games.gif);
+    background-size: cover;
+    background-position: center center;
+    animation: zoom 4s infinite;
+
 }
 
 .main{
@@ -50,14 +57,6 @@
 }
 
 
-
-.btn {
-    width: 60%;
-    height: 50%;
-    background-color: rgba(255, 255, 255, 0.425);
-    border-radius: 8px;
-    border: none;
-}
 
 button{
     background-color: #D0581C;
@@ -91,7 +90,7 @@ button{
 }
 
 img{
-    width: 200px;
+    width: 150px;
     margin: auto;
     transition: 0.5s;
     object-fit: cover;
@@ -115,12 +114,19 @@ img:hover{
         "footer footer";
 
         .nav{
-            height: 5rem;
-            min-width: 5rem;
+            height: 8rem;
+            min-width: 10rem;
         }
 
         .aside{
-            height: 6rem;
+            height: 8rem;
+            overflow: hidden;
+        }
+
+        .games{
+            height: 10rem;
+            
+
         }
         .menu{
             grid-area: menu;
@@ -138,7 +144,7 @@ img:hover{
 
 
        .productos{
-            grid-template-columns: repeat(auto-fill, minmax(220px, auto));
+            grid-template-columns: repeat(auto-fill, minmax(200px, auto));
         }
         .main{
             height: 75vh;
@@ -159,5 +165,17 @@ img:hover{
         margin: 0.5rem;
         }
     }
+}
+
+@keyframes zoom {
+  0% {
+    scale: 120%
+  }
+  50% {
+    scale: 150%;
+  }
+  100% {
+    scale: 120%;
+  }
 }
 
